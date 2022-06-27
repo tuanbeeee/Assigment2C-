@@ -64,3 +64,5 @@ C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.genruntimeconfig.cache
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.Properties.Resources.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\appsettings.json
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.MemberDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrderDetail.resources

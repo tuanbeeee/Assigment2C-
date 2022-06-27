@@ -47,7 +47,7 @@ namespace BusinessObject
             {
                 using (var context = new FStoreDBContext())
                 {
-                    var m1 = context.Members.SingleOrDefault(c => c.MemberId == c.MemberId);
+                    var m1 = context.Members.SingleOrDefault(c => c.MemberId == m.MemberId);
                     context.Members.Remove(m1);
 
                     context.SaveChanges();
