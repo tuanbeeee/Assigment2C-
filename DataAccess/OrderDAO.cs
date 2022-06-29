@@ -10,6 +10,21 @@ namespace BusinessObject
     public class OrderDAO
     {
 
+        public static List<Order> GetListOrder()
+        {
+            List<Order> list = new List<Order>();
+            try{
+                
+                using var context = new FStoreDBContext();
+                list = context.Orders.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return list;
+        } 
+
         public static void SaveOrder(Order o)
         {
             try

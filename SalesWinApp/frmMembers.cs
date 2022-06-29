@@ -64,7 +64,7 @@ namespace SalesWinApp
         private void frmMembers_Load(object sender, EventArgs e)
         {
             LoadMember();
-            dgvMembers.CellDoubleClick += dgvMembers_CellContentDoubleClick;
+            dgvMembers.CellDoubleClick += dgvMembers_CellDoubleClick;
         }
 
         public Member GetMemberObject()
@@ -118,7 +118,7 @@ namespace SalesWinApp
             }
         }
 
-        private void dgvMembers_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             MemberDetail memberDetail = new MemberDetail
             {

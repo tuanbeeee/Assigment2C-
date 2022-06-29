@@ -14,5 +14,7 @@ namespace BusinessObject.Repository
         public void SaveProduct(Product p) => ProductDAO.SaveProduct(p);
 
         public void UpdateProduct(Product p) => ProductDAO.UpdateProduct(p);
+
+        public List<Product> GetListProduct() => ProductDAO.GetListProduct();
     }
 }

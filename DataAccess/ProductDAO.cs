@@ -10,6 +10,22 @@ namespace BusinessObject
     public class ProductDAO
     {
 
+        public static List<Product> GetListProduct()
+        {
+            List<Product> list = new List<Product>();
+            try
+            {
+
+                using var context = new FStoreDBContext();
+                list = context.Products.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
+
         public static void SaveProduct (Product p)
         {
             try

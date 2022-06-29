@@ -15,6 +15,8 @@ namespace SalesWinApp
     public partial class frmOrders : Form
     {
         IOrderRepository resp = new OrderRepository();
+        IOrderDetailRepository resp1 = new OrderDetailRepository();
+        BindingSource source;
         public frmOrders()
         {
             InitializeComponent();
@@ -33,24 +35,26 @@ namespace SalesWinApp
                                     OrderDate = c.OrderDate,
                                     RequiredDate = c.RequiredDate,
                                     ShippedDate = c.ShippedDate,
-                                    Freight = c.Freight
+                                    Freight = c.Freight,
+                                    MemberID = c.MemberId
                                 };
-                BindingSource source = new BindingSource();
+                source = new BindingSource();
                 source.DataSource = orderList.ToList();
-
                 txtOrderID.DataBindings.Clear();
-                txtMemberID.DataBindings.Clear();
+                txtMemberName.DataBindings.Clear();
                 txtOrderDate.DataBindings.Clear();
                 txtRequiredDate.DataBindings.Clear();
                 txtShippedDate.DataBindings.Clear();
                 txtFreight.DataBindings.Clear();
+                txtMemID.DataBindings.Clear();
 
                 txtOrderID.DataBindings.Add("Text", source, "OrderID");
-                txtMemberID.DataBindings.Add("Text", source, "MemberName");
+                txtMemberName.DataBindings.Add("Text", source, "MemberName");
                 txtOrderDate.DataBindings.Add("Text", source, "OrderDate");
                 txtRequiredDate.DataBindings.Add("Text", source, "RequiredDate");
                 txtShippedDate.DataBindings.Add("Text", source, "ShippedDate");
                 txtFreight.DataBindings.Add("Text", source, "Freight");
+                txtMemID.DataBindings.Add("Text", source, "MemberID");
 
                 dgvOrders.DataSource = null;
                 dgvOrders.DataSource = source;
@@ -66,7 +70,8 @@ namespace SalesWinApp
             LoadOrder();
         }
 
-        private void dgvOrders_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+
+        private void dgvOrders_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             frmOrderDetail frmOrderDetail = new frmOrderDetail
             {
@@ -75,6 +80,70 @@ namespace SalesWinApp
 
             };
             frmOrderDetail.ShowDialog();
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            frmCreateOrder frmCreateOrder = new frmCreateOrder
+            {
+                Text = "Add new order",
+                OrderRepository = resp,
+                OrderDetailRepository = resp1
+            };
+            if (frmCreateOrder.ShowDialog() == DialogResult.OK)
+            {
+                LoadOrder();
+                source.Position = source.Count - 1;
+            }
+        }
+        public Order GetOrderObject()
+        {
+            Order od = null;
+            try
+            {
+                od = new Order
+                {
+                    OrderId = int.Parse(txtOrderID.Text),
+                    MemberId = int.Parse(txtMemID.Text),
+                    OrderDate = DateTime.Parse(txtOrderDate.Text),
+                    RequiredDate = DateTime.Parse(txtRequiredDate.Text),
+                    ShippedDate = DateTime.Parse(txtShippedDate.Text),
+                    Freight = decimal.Parse(txtFreight.Text)
+                };
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Get order detail");
+            }
+            return od;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmOrderUpdate frmOrderUpdate = new frmOrderUpdate
+            {
+                Text = "Update Order Detail",
+                Order = GetOrderObject()
+            };
+            if (frmOrderUpdate.ShowDialog() == DialogResult.OK)
+            {
+                LoadOrder();
+                source.Position = source.Count - 1;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var or = GetOrderObject();
+                resp.DeleteOrder(or);
+                LoadOrder();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Delete one order !");
+            }
         }
     }
 }

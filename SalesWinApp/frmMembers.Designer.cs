@@ -50,7 +50,7 @@ namespace SalesWinApp
             this.dgvMembers.RowTemplate.Height = 25;
             this.dgvMembers.Size = new System.Drawing.Size(425, 426);
             this.dgvMembers.TabIndex = 0;
-            this.dgvMembers.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellContentDoubleClick);
+            this.dgvMembers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembers_CellDoubleClick);
             // 
             // txtMemID
             // 

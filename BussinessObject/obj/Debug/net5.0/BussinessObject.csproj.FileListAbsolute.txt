@@ -1,4 +1,6 @@
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.deps.json
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.dll
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\ref\BussinessObject.dll
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.pdb
@@ -10,6 +12,4 @@ C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\obj\Debug\n
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\obj\Debug\net5.0\BussinessObject.dll
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\obj\Debug\net5.0\ref\BussinessObject.dll
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\obj\Debug\net5.0\BussinessObject.pdb
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.json
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\bin\Debug\net5.0\BussinessObject.runtimeconfig.dev.json
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\BussinessObject\obj\Debug\net5.0\BussinessObject.genruntimeconfig.cache

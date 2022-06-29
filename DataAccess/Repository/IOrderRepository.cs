@@ -12,5 +12,6 @@ namespace BusinessObject.Repository
         void SaveOrder(Order o);
         void DeleteOrder(Order o);
         void UpdateOrder(Order o);
+        List<Order> GetOrderList();
     }
 }

@@ -1,4 +1,5 @@
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\SalesWinApp.exe
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\appsettings.json
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\SalesWinApp.deps.json
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\SalesWinApp.runtimeconfig.json
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\SalesWinApp.runtimeconfig.dev.json
@@ -50,8 +51,12 @@ C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmLogin.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmMain.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmMembers.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrderDetail.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrders.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmProducts.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmUpdateOrderDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.MemberDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.Properties.Resources.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.csproj.GenerateResource.cache
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.AssemblyInfoInputs.cache
@@ -62,7 +67,5 @@ C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\ref\SalesWinApp.dll
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.pdb
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.genruntimeconfig.cache
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.Properties.Resources.resources
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\bin\Debug\net5.0-windows\appsettings.json
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.MemberDetail.resources
-C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrderDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmCreateOrder.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrderUpdate.resources

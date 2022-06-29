@@ -14,6 +14,6 @@ namespace BusinessObject.Repository
         public void SaveOrder(Order o) => OrderDAO.SaveOrder(o);
 
         public void UpdateOrder(Order o) => OrderDAO.UpdateOrder(o);
-
+        public List<Order> GetOrderList() => OrderDAO.GetListOrder();
     }
 }
