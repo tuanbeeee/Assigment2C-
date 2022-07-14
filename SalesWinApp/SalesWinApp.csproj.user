@@ -22,10 +22,25 @@
     <Compile Update="frmOrderUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmProducts.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmUpdateOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmUserOrderDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmUserOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MemberDetail.cs">

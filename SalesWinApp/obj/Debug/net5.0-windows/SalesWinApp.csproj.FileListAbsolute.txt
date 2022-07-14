@@ -69,3 +69,8 @@ C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.genruntimeconfig.cache
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmCreateOrder.resources
 C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmOrderUpdate.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmProductDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.MainUser.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmUserOrder.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmUserOrderDetail.resources
+C:\Users\Tuan Be\source\repos\Ass02Solution_SE151159\SalesWinApp\obj\Debug\net5.0-windows\SalesWinApp.frmStatistics.resources

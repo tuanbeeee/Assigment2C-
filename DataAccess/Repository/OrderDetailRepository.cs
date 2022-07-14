@@ -11,8 +11,11 @@ namespace BusinessObject.Repository
     {
         public void DeleteOrderDetail(OrderDetail od) => OrderDetailDAO.DeleteOrderDetail(od);
 
+        public List<OrderDetail> GetListOrderDetails() => OrderDetailDAO.GetListOrderDetails();
+
         public void SaveOrderDetail(OrderDetail od) => OrderDetailDAO.SaveOrderDetail(od);
 
         public void UpdateOrderDetail(OrderDetail od) => OrderDetailDAO.UpdateOrderDetail(od);
+
     }
 }

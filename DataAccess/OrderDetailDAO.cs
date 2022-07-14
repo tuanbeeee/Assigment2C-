@@ -9,6 +9,22 @@ namespace BusinessObject
 {
     public class OrderDetailDAO
     {
+
+        public static List<OrderDetail> GetListOrderDetails()
+        {
+            List<OrderDetail> list = new List<OrderDetail>();
+            try
+            {
+
+                using var context = new FStoreDBContext();
+                list = context.OrderDetails.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
         public static void SaveOrderDetail(OrderDetail o)
         {
             try

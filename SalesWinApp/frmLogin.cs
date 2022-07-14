@@ -25,6 +25,7 @@ namespace SalesWinApp
             this.Close();
         }
 
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string fileName = "appsettings.json";
@@ -41,7 +42,11 @@ namespace SalesWinApp
                 this.Hide();
             }else if (checkMember() != null)
             {
-                MessageBox.Show("Account is valid !");
+                MainUser mainUser = new MainUser {
+                    Email = txtEmail.Text
+                };
+                mainUser.Show();
+                this.Hide();
             }
             else
             {

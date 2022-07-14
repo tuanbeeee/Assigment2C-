@@ -11,6 +11,8 @@ namespace BusinessObject.Repository
     {
         public void DeleteMember(Member m) => MemberDAO.DeleteMember(m);
 
+        public List<Member> GetMembers() => MemberDAO.GetListMem();
+
         public void SaveMember(Member m) => MemberDAO.SaveMember(m);
 
         public void UpdateMember(Member m) => MemberDAO.UpdateMember(m);

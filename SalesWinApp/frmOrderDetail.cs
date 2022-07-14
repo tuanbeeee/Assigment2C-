@@ -126,15 +126,23 @@ namespace SalesWinApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+           
+            DialogResult dialogResult = MessageBox.Show("Do you want to delete order detail", "Delete", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                var ordd = GetOrderDetailObject();
-                resp.DeleteOrderDetail(ordd);
-                LoadOrderDetail();
+                try
+                {
+                    var ordd = GetOrderDetailObject();
+                    resp.DeleteOrderDetail(ordd);
+                    LoadOrderDetail();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Delete one order detail");
+                }
             }
-            catch (Exception ex)
+            else if (dialogResult == DialogResult.No)
             {
-                MessageBox.Show(ex.Message, "Delete one order detail");
             }
         }
     }

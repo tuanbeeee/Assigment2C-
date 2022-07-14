@@ -58,5 +58,21 @@ namespace BusinessObject
                 throw new Exception(ex.Message);
             }
         }
+
+        public static List<Member> GetListMem()
+        {
+            List<Member> list = new List<Member>();
+            try
+            {
+
+                using var context = new FStoreDBContext();
+                list = context.Members.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
     }
 }

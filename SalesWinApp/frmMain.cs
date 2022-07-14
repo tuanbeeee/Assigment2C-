@@ -21,7 +21,7 @@ namespace SalesWinApp
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmProducts viewProduct = new frmProducts();
-            viewProduct.MdiParent = this;
+
             viewProduct.Show();
         }
 
@@ -33,15 +33,29 @@ namespace SalesWinApp
         private void memberToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMembers viewMember = new frmMembers();
-            viewMember.MdiParent = this;
+
             viewMember.Show();
         }
 
         private void orderDetailToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmOrders viewOrders = new frmOrders();
-            viewOrders.MdiParent = this;
+
             viewOrders.Show();
+        }
+
+ 
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void statisticsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStatistics frmStatistics = new frmStatistics();
+
+            frmStatistics.Show();
         }
     }
 }

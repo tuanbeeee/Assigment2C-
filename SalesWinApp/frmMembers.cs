@@ -64,7 +64,7 @@ namespace SalesWinApp
         private void frmMembers_Load(object sender, EventArgs e)
         {
             LoadMember();
-            dgvMembers.CellDoubleClick += dgvMembers_CellDoubleClick;
+            
         }
 
         public Member GetMemberObject()
@@ -106,16 +106,25 @@ namespace SalesWinApp
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
+
+            DialogResult dialogResult = MessageBox.Show("Do you want to delete member", "Delete", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
             {
-                var mem = GetMemberObject();
-                resp.DeleteMember(mem);
-                LoadMember();
+                try
+                {
+                    var mem = GetMemberObject();
+                    resp.DeleteMember(mem);
+                    LoadMember();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Delete one member");
+                }
             }
-            catch (Exception ex)
+            else if (dialogResult == DialogResult.No)
             {
-                MessageBox.Show(ex.Message, "Delete one member");
             }
+            
         }
 
         private void dgvMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -125,14 +134,14 @@ namespace SalesWinApp
                 Text = "Update Member",
                 InsertOrUpdate = true,
                 Member = GetMemberObject(),
+                City = txtCity.Text,
                 MemberRepository = resp
             };
-            if (memberDetail.ShowDialog() == DialogResult.OK)
-            {
+                memberDetail.ShowDialog();                
                 LoadMember();
                 source.Position = source.Count - 1;
 
-            }
+            
         }
     }
 }

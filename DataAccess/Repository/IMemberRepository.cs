@@ -12,5 +12,6 @@ namespace BusinessObject.Repository
         void SaveMember(Member m);
         void DeleteMember(Member m);
         void UpdateMember(Member m);
+        List<Member> GetMembers();
     }
 }
